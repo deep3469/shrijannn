@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shrijan Shah
+     - Web Developer</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f1f1f1;
+    }
+    .container {
+      max-width: 600px;
+      background-color: #fff;
+      margin: 30px auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+    .header {
+      background-color: #3d3d3d;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    .avatar {
+      width: 80px;
+      margin: 15px auto;
+      display: block;
+    }
+    .section {
+      padding: 20px;
+      border-top: 1px solid #ddd;
+    }
+    .section h3 {
+      margin-top: 0;
+      color: #333;
+    }
+    .contact a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+    .skills span {
+      margin-right: 10px;
+      background: #e0e0e0;
+      padding: 5px 10px;
+      border-radius: 5px;
+      display: inline-block;
+      margin-bottom: 5px;
+    }
+    .typing {
+      font-style: italic;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+
+    <header>
+    <img src="shrijan.jpeg" alt="Shrijan Shah" />
+    <h1>Shrijan Shah</h1>
+    <p>Web Developer & Designer</p>
+  </header>
+
+  <div class="container">
+    <section>
+      <h2>About Me</h2>
+      <p>Hi, I'm Shrijan. I build clean, modern, and responsive websites. I enjoy solving problems with code and creating great user experiences.</p>
+    </section>
+
+
+
+  </div>
+
+
+  <div class="section">
+    <h3>Skills</h3>
+    <div class="skills">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>Planning</span>
+    </div>
+  </div>
+
+  <div class="section">
+    <h3>Experience</h3>
+    <ul>
+      <li><strong>Web Developer</strong> at Logen Company (2021 - Present)</li>
+      <li><strong>Junior Developer</strong> at Today CJ Company (2019 - 2021)</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h3>Education</h3>
+    <p>Bachelor's in Computer Science, University of Tribhuwan (2015 - 2019)</p>
+  </div>
+
+  <div class="section contact">
+    <h3>Contact</h3>
+    <p>Email: <a href="mailto:Shrijan.doe@example.com">Shrijan@example.com</a></p>
+    <p>Phone: +82 010-456-7890</p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/Shrijan Shah" target="_blank">linkedin.com/in/johndoe</a></p>
+  </div>
+</div>
+
+<script>
+  const text = "a passionate web developer with a love for creating elegant and efficient solutions. I have experience in building responsive and user-friendly websites.";
+  let index = 0;
+  const typingTarget = document.getElementById("typing-text");
+
+  function typeWriter() {
+    if (index < text.length) {
+      typingTarget.innerHTML += text.charAt(index);
+      index++;
+      setTimeout(typeWriter, 40);
+    }
+  }
+
+  window.onload = typeWriter;
+</script>
+
+</body>
+</html> 
